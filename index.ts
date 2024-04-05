@@ -18,7 +18,7 @@ let pinAnswer = await inquirer.prompt({
 });
 
 if (pinAnswer.pin === myPin && userIDAnswer.uID === userID) {
-console.log(chalk.bgGreen.blue.bold("\n\tCORRECT PIN AND USER ID\t\n"))
+console.log(chalk.bgGreen.white.bold("\n\tCORRECT PIN AND USER ID\t\n"))
 
   let operationAnswer = await inquirer.prompt({
     name: "operation",
