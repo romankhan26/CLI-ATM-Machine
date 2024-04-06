@@ -22,10 +22,12 @@ if (pinAnswer.pin === myPin && userIDAnswer.uID === userID) {
         name: "operation",
         message: chalk_1.default.bold.blue("Please select the option :"),
         type: "list",
-        choices: [chalk_1.default.bold.yellow("Deposit"),
+        choices: [
+            chalk_1.default.bold.yellow("Deposit"),
             chalk_1.default.bold.yellow("Withdraw"),
             chalk_1.default.bold.yellow("CheckBalance"),
-            chalk_1.default.bold.yellow("FastCash")],
+            chalk_1.default.bold.yellow("FastCash"),
+        ],
     });
     if (operationAnswer.operation == chalk_1.default.bold.yellow("Deposit")) {
         var depositAnswer = await inquirer_1.default.prompt({
