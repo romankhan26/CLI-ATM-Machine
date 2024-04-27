@@ -4,7 +4,7 @@ import chalk from "chalk";
 import inquirer from "inquirer";
 
 let myBalance: number = 10000;
-let userID: string = "ROMAN KHAN";
+let userID: string = "ROMAN AYUB";
 let myPin: number = 2112006;
 let userIDAnswer = await inquirer.prompt({
   name: "uID",
